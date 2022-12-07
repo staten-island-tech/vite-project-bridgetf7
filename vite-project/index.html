@@ -8,29 +8,32 @@
   <!-- font links -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Inconsolata&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
   <title></title>
 </head>
 
 <body>
   <h1 class="mainHeader">buy a car :)</h1>
 
-  <div class="lightDark">
-    <p>Toggle Theme:</p>
+  <div class="lightDark" id="themeBtn">
+    <p class="btnLabel">Toggle Theme:</p>
     <button type="submit" class="lightDark" id="lightMode">Light</button>
     <button type="submit" class="lightDark" id="darkMode">Dark</button>
   </div><br>
 
-  <div class="type">
-    <p>Filter by Type:</p>
+  <div class="type" id="typeBtn">
+    <p class="btnLabel">Filter by Type:</p>
     <button type="submit" class="typeSelectors" id="allCars">All</button>
     <button type="submit" class="typeSelectors" id="SUVs">SUVs</button>
     <button type="submit" class="typeSelectors" id="electrified">Electrified</button>
     <button type="submit" class="typeSelectors" id="trucks">Trucks</button>
+    <button type="submit" class="typeSelectors" id="sedansCoupes">Sedans & Coupes</button>
   </div><br>
 
-  <div class="prices">
-    <p>Filter by Price:</p>
+  <div class="prices" id="priceBtn">
+    <p class="btnLabel">Filter by Price:</p>
     <button type="submit" class="priceSelectors" id="priceLowHigh">Filter By Price-Low to High</button>
     <button type="submit" class="priceSelectors" id="priceHighLow">Filter By Price-High to Low</button>
   </div><br>
