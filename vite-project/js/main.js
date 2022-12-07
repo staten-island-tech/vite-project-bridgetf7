@@ -3,6 +3,7 @@ import { carsData } from "./cars.js";
 console.log(carsData);
 
 
+//outputs product cars for all cars when webpage is entered
 carsData.forEach(carsData => {
     document.getElementById("products").insertAdjacentHTML
         ("beforeend",
