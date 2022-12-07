@@ -16,27 +16,28 @@
 
 <body>
   <h1 class="mainHeader">buy a car :)</h1>
+  <div class="buttonsContainer">
+    <div class="lightDark" id="themeBtn">
+      <p class="btnLabel">Toggle Theme:</p>
+      <button type="submit" class="lightDark" id="lightMode">Light</button>
+      <button type="submit" class="lightDark" id="darkMode">Dark</button>
+    </div><br>
 
-  <div class="lightDark" id="themeBtn">
-    <p class="btnLabel">Toggle Theme:</p>
-    <button type="submit" class="lightDark" id="lightMode">Light</button>
-    <button type="submit" class="lightDark" id="darkMode">Dark</button>
-  </div><br>
+    <div class="type" id="typeBtn">
+      <p class="btnLabel">Filter by Type:</p>
+      <button type="submit" class="typeSelectors" id="allCars">All</button>
+      <button type="submit" class="typeSelectors" id="SUVs">SUVs</button>
+      <button type="submit" class="typeSelectors" id="electrified">Electrified</button>
+      <button type="submit" class="typeSelectors" id="trucks">Trucks</button>
+      <button type="submit" class="typeSelectors" id="sedansCoupes">Sedans & Coupes</button>
+    </div><br>
 
-  <div class="type" id="typeBtn">
-    <p class="btnLabel">Filter by Type:</p>
-    <button type="submit" class="typeSelectors" id="allCars">All</button>
-    <button type="submit" class="typeSelectors" id="SUVs">SUVs</button>
-    <button type="submit" class="typeSelectors" id="electrified">Electrified</button>
-    <button type="submit" class="typeSelectors" id="trucks">Trucks</button>
-    <button type="submit" class="typeSelectors" id="sedansCoupes">Sedans & Coupes</button>
-  </div><br>
-
-  <div class="prices" id="priceBtn">
-    <p class="btnLabel">Filter by Price:</p>
-    <button type="submit" class="priceSelectors" id="priceLowHigh">Low to High</button>
-    <button type="submit" class="priceSelectors" id="priceHighLow">High to Low</button>
-  </div><br>
+    <div class="prices" id="priceBtn">
+      <p class="btnLabel">Filter by Price:</p>
+      <button type="submit" class="priceSelectors" id="priceLowHigh">Low to High</button>
+      <button type="submit" class="priceSelectors" id="priceHighLow">High to Low</button>
+    </div><br>
+  </div>
 
   <div id="products"></div>
 

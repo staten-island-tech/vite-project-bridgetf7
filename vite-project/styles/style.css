@@ -61,8 +61,7 @@ h2 {
 
 
 img {
-  width: 22rem;
-  height: 22rem;
+  width: 45rem;
   overflow: hidden;
 }
 
@@ -79,4 +78,12 @@ img {
   background-color: rgb(158, 158, 200);
   margin: 2rem;
   padding: 1rem;
+}
+
+#outputText {
+  font-size: 3rem;
+}
+
+.buttonsContainer {
+  margin-left: 2rem;
 }

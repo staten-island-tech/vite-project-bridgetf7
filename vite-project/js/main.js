@@ -10,13 +10,12 @@ carsData.forEach(carsData => {
       <div id="productCard">
       <h2>${carsData.name}</h2>
       <p><img src=${carsData.imgURL}></p>
-      <p>Type: ${carsData.type}</p>
-      <p>Price: ${carsData.price}</p>
+      <p id="outputText">Type: ${carsData.type}</p>
+      <p id="outputText">Price: ${carsData.price}</p>
       <button id="shopBtn">Shop Now</button>
     `
         )
 });
-
 
 
 
