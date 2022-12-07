@@ -31,9 +31,15 @@ const carsData = [
     },
     {
         name: "Porsche 911 Carrera Cabriolet",
-        type: "Coup",
+        type: "Coupe",
         price: "$114,000",
         imgURL: "https://th.bing.com/th/id/R.7c3bd2d52183fb873371b03b0e5c21f2?rik=mi%2f7br%2fS%2fxb2Tw&riu=http%3a%2f%2fcdn.carbuzz.com%2fgallery-images%2f1600%2f529000%2f300%2f529355.jpg&ehk=glS%2bz9t0nogMAv1XnEWv7fWeRDOTSaSjTk758KarnME%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+        name: "Electric 1967 Ford Mustang",
+        type: "Coupe",
+        price: "$450,000",
+        imgURL: "https://th.bing.com/th/id/R.1ab333de48eb1f190d9f64abd9c465d0?rik=V4SIVDhbT82ctg&pid=ImgRaw&r=0"
     }
 ];
 
