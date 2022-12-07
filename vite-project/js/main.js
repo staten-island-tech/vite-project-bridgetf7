@@ -20,3 +20,50 @@ carsData.forEach(carsData => {
 
 
 
+/*filters out the type of car
+carsData is my ARRAY, car is my chosen ITEM NAME
+*/
+
+//ALL 
+document.getElementById("allCars").addEventListener("click", function () {
+    carsData
+        .forEach((car) => {
+            console.log(car.name)
+        });
+});
+
+//SUVs
+document.getElementById("SUVs").addEventListener("click", function () {
+    carsData
+        .filter((car) => car.type === "SUV")
+        .forEach((car) => {
+            console.log(car.name)
+        });
+});
+
+//Electrified 
+document.getElementById("electrified").addEventListener("click", function () {
+    carsData
+        .filter((car) => car.type === "electrified")
+        .forEach((car) => {
+            console.log(car.name)
+        });
+});
+
+//Trucks 
+document.getElementById("trucks").addEventListener("click", function () {
+    carsData
+        .filter((car) => car.type === "Truck")
+        .forEach((car) => {
+            console.log(car.name)
+        });
+});
+
+//Sedans & Coupes
+document.getElementById("sedansCoupes").addEventListener("click", function () {
+    carsData
+        .filter((car) => car.type === "Sedan", "Coupe")
+        .forEach((car) => {
+            console.log(car.name)
+        });
+});
