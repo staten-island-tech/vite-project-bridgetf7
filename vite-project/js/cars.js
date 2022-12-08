@@ -13,7 +13,7 @@ const carsData = [
     },
     {
         name: "Ford F-150 Lightning",
-        type: "Electrified, Truck",
+        type: "Electric, Truck",
         price: "$54,975",
         imgURL: "https://res.cloudinary.com/dx8b7nhay/image/upload/v1670468045/lightning_bak5cn.jpg"
     },
@@ -25,7 +25,7 @@ const carsData = [
     },
     {
         name: "Cadillac LYRIQ",
-        type: "Electrified, SUV",
+        type: "Electric, SUV",
         price: "$69,795",
         imgURL: "https://res.cloudinary.com/dx8b7nhay/image/upload/v1670468044/lyriq_tr9tlx.jpg"
     },
@@ -37,7 +37,7 @@ const carsData = [
     },
     {
         name: "Electric 1967 Ford Mustang",
-        type: "Coupe",
+        type: "Coupe, Electric",
         price: "$450,000",
         imgURL: "https://res.cloudinary.com/dx8b7nhay/image/upload/v1670468044/evmustang_w31kjp.jpg"
     }

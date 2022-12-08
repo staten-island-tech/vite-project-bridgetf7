@@ -8,12 +8,15 @@ body,
 }
 
 :root {
-
+  /*colours*/
+  --lighestGrey: #F5F5F5;
+  --lightGrey: #dedede;
+  --darkGrey: #1F1F21;
   /*typograghy*/
   --h1: 5rem;
   --h2: 2.369rem;
   --h3: 1.789rem;
-  --p: 1rem;
+  --p: 0.5rem;
 }
 
 h1 {
@@ -89,6 +92,11 @@ img {
   text-align: center;
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: var(--p);
+}
+
 #products {
   display: inline-block;
   flex-wrap: wrap;
@@ -99,7 +107,7 @@ img {
 #productCard {
   width: 40rem;
   height: 60rem;
-  background-color: rgb(222, 230, 237);
+  background-color: #dddddd;
   margin: 2rem;
   padding: 1rem;
 }
@@ -113,9 +121,9 @@ img {
 }
 
 .lightMode {
-  background-color: aliceblue;
+  background-color: var(--lighestGrey);
 }
 
 .darkMode {
-  background-color: gray;
+  background-color: var(--darkGrey);
 }
