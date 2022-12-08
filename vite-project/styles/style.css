@@ -12,6 +12,7 @@ body,
   --lighestGrey: #F5F5F5;
   --lightGrey: #dedede;
   --darkGrey: #1F1F21;
+  --black: #000;
   /*typograghy*/
   --h1: 5rem;
   --h2: 2.369rem;
@@ -32,6 +33,7 @@ h1 {
 button {
   font-size: var(--h3);
   font-family: 'Lato', sans-serif;
+  color: var(--black);
   letter-spacing: 0.1rem;
   width: fit-content;
   border: none;
@@ -77,6 +79,9 @@ h2 {
   padding: 0;
   text-decoration: underline;
   justify-content: center;
+  display: block;
+  margin: 0 auto;
+
 }
 
 img {
@@ -117,10 +122,19 @@ p {
   margin-left: 4rem;
 }
 
+
 .lightMode {
   background-color: var(--lighestGrey);
+  color: var(--black);
+
 }
 
 .darkMode {
   background-color: var(--darkGrey);
+  color: var(--lightGrey);
 }
+
+
+
+
+/*https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2*/
