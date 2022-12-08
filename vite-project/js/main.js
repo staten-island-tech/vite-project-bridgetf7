@@ -8,8 +8,8 @@ carsData.forEach(carsData => {
         ("beforeend",
             `
       <div id="productCard">
-      <h2>${carsData.name}</h2>
       <p><img src=${carsData.imgURL}></p>
+      <h2>${carsData.name}</h2>
       <p id="outputText">Type: ${carsData.type}</p>
       <p id="outputText">Price: ${carsData.price}</p>
       <button id="shopBtn">Shop Now</button>
@@ -17,8 +17,16 @@ carsData.forEach(carsData => {
         )
 });
 
-
-
+//theme buttons
+document.getElementById("toggleTheme").addEventListener("click", function () {
+    if (document.body.classList.contains("lightMode")) {
+        document.body.classList.add("darkMode");
+        document.body.classList.remove("lightMode");
+    } else {
+        document.body.classList.add("lightMode");
+        document.body.classList.remove("darkMode");
+    }
+});
 
 /*filters out the type of car
 carsData is my ARRAY, car is my chosen ITEM NAME
