@@ -16,7 +16,7 @@ body,
   --h1: 5rem;
   --h2: 2.369rem;
   --h3: 1.789rem;
-  --p: 0.5rem;
+  --p: 2rem;
 }
 
 h1 {
@@ -34,8 +34,6 @@ button {
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.1rem;
   width: fit-content;
-  margin: 0.5rem;
-  padding: 0.5rem;
   border: none;
   background: none;
   margin: 0;
@@ -98,7 +96,6 @@ p {
 }
 
 #products {
-  display: inline-block;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -113,7 +110,7 @@ p {
 }
 
 #outputText {
-  font-size: 2rem;
+  margin-left: 1.8rem;
 }
 
 .buttonsContainer {
