@@ -61,7 +61,7 @@ button {
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: var(--h2);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   text-align: center;
   margin: 1rem;
 }
@@ -73,19 +73,16 @@ h2 {
   letter-spacing: 0.1rem;
   border: none;
   background: none;
-  margin: 0;
   padding: 0;
   text-decoration: underline;
+  justify-content: center;
 }
 
 img {
-  width: 30rem;
-  overflow: hidden;
-  justify-content: center;
-  display: inline-block;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
+  width: 35rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 #themeBtn {
@@ -100,9 +97,9 @@ img {
 }
 
 #productCard {
-  width: 50rem;
-  height: 50rem;
-  background-color: rgb(158, 158, 200);
+  width: 40rem;
+  height: 60rem;
+  background-color: rgb(222, 230, 237);
   margin: 2rem;
   padding: 1rem;
 }
@@ -112,7 +109,7 @@ img {
 }
 
 .buttonsContainer {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .lightMode {
