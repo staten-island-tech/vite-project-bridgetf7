@@ -49,10 +49,10 @@ document.getElementById("SUVs").addEventListener("click", function () {
         });
 });
 
-//Electrified 
-document.getElementById("electrified").addEventListener("click", function () {
+//Electric
+document.getElementById("electric").addEventListener("click", function () {
     carsData
-        .filter((car) => car.type === "electrified")
+        .filter((car) => car.type === "electric")
         .forEach((car) => {
             console.log(car.name)
         });
