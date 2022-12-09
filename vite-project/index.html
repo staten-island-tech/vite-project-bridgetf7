@@ -13,34 +13,36 @@
     rel="stylesheet">
   <title>Vite Project</title>
 </head>
+<div class="box">
 
-<body class="lightMode">
-  <h1 class="mainHeader">buy a car :)</h1>
-  <div id="themeBtn">
-    <button type="submit" class="lightDark" id="toggleTheme">Toggle Theme</button>
-  </div><br>
-
-  <div class="buttonsContainer">
-
-    <div class="type" id="typeBtn">
-      <p class="btnLabel">Filter by Type:</p>
-      <button type="submit" class="typeSelectors" id="allCars">All</button>
-      <button type="submit" class="typeSelectors" id="SUVs">SUVs</button>
-      <button type="submit" class="typeSelectors" id="electric">Electric</button>
-      <button type="submit" class="typeSelectors" id="trucks">Trucks</button>
-      <button type="submit" class="typeSelectors" id="sedansCoupes">Sedans & Coupes</button>
+  <body class="lightMode">
+    <h1 class="mainHeader">buy a car :)</h1>
+    <div id="themeBtn">
+      <button type="submit" class="lightDark" id="toggleTheme">Toggle Theme</button>
     </div><br>
 
-    <div class="prices" id="priceBtn">
-      <p class="btnLabel">Filter by Price:</p>
-      <button type="submit" class="priceSelectors" id="priceLowHigh">Low to High</button>
-      <button type="submit" class="priceSelectors" id="priceHighLow">High to Low</button>
-    </div><br>
-  </div>
+    <div class="buttonsContainer">
 
-  <div id="products"></div>
+      <div class="type" id="typeBtn">
+        <p class="btnLabel">Filter by Type:</p>
+        <button type="submit" class="typeSelectors" id="allCars">All</button>
+        <button type="submit" class="typeSelectors" id="SUVs">SUVs</button>
+        <button type="submit" class="typeSelectors" id="electric">Electric</button>
+        <button type="submit" class="typeSelectors" id="trucks">Trucks</button>
+        <button type="submit" class="typeSelectors" id="sedansCoupes">Sedans & Coupes</button>
+      </div><br>
 
-  <script type="module" src="/js/main.js"></script>
+      <div class="prices" id="priceBtn">
+        <p class="btnLabel">Filter by Price:</p>
+        <button type="submit" class="priceSelectors" id="priceLowHigh">Low to High</button>
+        <button type="submit" class="priceSelectors" id="priceHighLow">High to Low</button>
+      </div><br>
+    </div>
+
+    <div id="products"></div>
+</div>
+
+<script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

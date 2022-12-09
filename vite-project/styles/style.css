@@ -7,6 +7,10 @@ body,
   font-size: 62.5%;
 }
 
+.box {
+  background-color: var(---background);
+}
+
 :root {
   /*colours*/
   --lighestGrey: #F5F5F5;
@@ -20,12 +24,36 @@ body,
   --p: 2rem;
 }
 
+/*
+.lightMode {
+  background-color: var(--lighestGrey);
+  color: var(--black);
+
+}
+
+.darkMode {
+  background-color: var(--darkGrey);
+  color: var(--lightGrey);
+}
+*/
+
+.darkMode {
+  ---background: #1F1F21;
+  ---text: #F5F5F5;
+}
+
+.lightmode {
+  ---background: #F5F5F5;
+  ---text: #1F1F21;
+}
+
+
 h1 {
-  margin-top: 6rem;
   margin-bottom: 2rem;
   font-size: var(--h1);
   font-family: 'Playfair Display', serif;
   font-style: oblique;
+  color: var(---text);
   letter-spacing: 0.5rem;
   text-align: center;
 }
@@ -33,7 +61,8 @@ h1 {
 button {
   font-size: var(--h3);
   font-family: 'Lato', sans-serif;
-  color: var(--black);
+  /*color: var(--black);*/
+  color: ---text;
   letter-spacing: 0.1rem;
   width: fit-content;
   border: none;
@@ -57,6 +86,7 @@ button {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: var(--h2);
+  color: var(---text);
   letter-spacing: 0.1rem;
   margin-left: 1rem;
 }
@@ -64,6 +94,7 @@ button {
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: var(--h2);
+  color: var(---text);
   letter-spacing: 0.2rem;
   text-align: center;
   margin: 1rem;
@@ -98,6 +129,7 @@ img {
 p {
   font-family: 'Lato', sans-serif;
   font-size: var(--p);
+  color: var(---text);
 }
 
 #products {
@@ -123,18 +155,9 @@ p {
 }
 
 
-.lightMode {
-  background-color: var(--lighestGrey);
-  color: var(--black);
-
-}
-
-.darkMode {
-  background-color: var(--darkGrey);
-  color: var(--lightGrey);
-}
-
 
 
 
 /*https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2*/
+
+/*https://medium.com/@amyabafor013/how-to-create-different-color-themes-with-css-and-javascript-d2ff1e66ce08*/

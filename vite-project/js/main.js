@@ -19,6 +19,7 @@ carsData.forEach(carsData => {
         )
 });
 
+
 //theme buttons
 document.getElementById("toggleTheme").addEventListener("click", function () {
     if (document.body.classList.contains("lightMode")) {
