@@ -13,16 +13,20 @@
     rel="stylesheet">
   <title>Vite Project</title>
 </head>
-<div class="box">
 
-  <body class="lightMode">
+<body class="lightMode">
+
+  <div class="container">
+
+    <div class="top"></div>
+
     <h1 class="mainHeader">buy a car :)</h1>
+
     <div id="themeBtn">
-      <button type="submit" class="lightDark" id="toggleTheme">Toggle Theme</button>
+      <button type="submit" id="toggleTheme">Toggle Theme</button>
     </div><br>
 
     <div class="buttonsContainer">
-
       <div class="type" id="typeBtn">
         <p class="btnLabel">Filter by Type:</p>
         <button type="submit" class="typeSelectors" id="allCars">All</button>
@@ -40,9 +44,11 @@
     </div>
 
     <div id="products"></div>
-</div>
 
-<script type="module" src="/js/main.js"></script>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+
 </body>
 
 </html>

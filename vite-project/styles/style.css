@@ -7,10 +7,6 @@ body,
   font-size: 62.5%;
 }
 
-.box {
-  background-color: var(---background);
-}
-
 :root {
   /*colours*/
   --lighestGrey: #F5F5F5;
@@ -24,45 +20,41 @@ body,
   --p: 2rem;
 }
 
-/*
+.container {
+  background-color: var(---background);
+}
+
+.top {
+  height: 6rem;
+  color: var(---background);
+}
+
 .lightMode {
-  background-color: var(--lighestGrey);
-  color: var(--black);
-
+  ---background: #F5F5F5;
+  ---text: #1F1F21;
+  --card: #DEDEDE;
 }
-
-.darkMode {
-  background-color: var(--darkGrey);
-  color: var(--lightGrey);
-}
-*/
 
 .darkMode {
   ---background: #1F1F21;
   ---text: #F5F5F5;
+  --card: #000;
 }
-
-.lightmode {
-  ---background: #F5F5F5;
-  ---text: #1F1F21;
-}
-
 
 h1 {
-  margin-bottom: 2rem;
   font-size: var(--h1);
   font-family: 'Playfair Display', serif;
   font-style: oblique;
-  color: var(---text);
   letter-spacing: 0.5rem;
   text-align: center;
+  color: var(---text);
+  margin-bottom: 2rem;
 }
 
 button {
   font-size: var(--h3);
   font-family: 'Lato', sans-serif;
-  /*color: var(--black);*/
-  color: ---text;
+  color: var(---text);
   letter-spacing: 0.1rem;
   width: fit-content;
   border: none;
@@ -141,7 +133,7 @@ p {
 #productCard {
   width: 40rem;
   height: 60rem;
-  background-color: #dddddd;
+  background-color: var(--card);
   margin: 2rem;
   padding: 1rem;
 }
