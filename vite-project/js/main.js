@@ -38,21 +38,31 @@ const remove = function () {
     document.querySelectorAll("#productCard").forEach((card) => card.remove());
 };
 
+const mapData = function () {
+    carsData
+        .map((car) => ({
+            name: car.name,
+            imgURL: car.imgURL,
+            price: car.price,
+            type: car.type
+        }))
+};
+
 const filterProducts = {
     typeAll: function () {
         document.getElementById("allCars").addEventListener("click", function () {
             remove();
             carsData
                 .forEach((car) => {
-                    console.log(car.name)
+                    console.log(car.name);
                     createProduct(car);
                 });
         });
     },
-
     typeSUVs: function () {
         document.getElementById("SUVs").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .filter((car) => car.type.includes("SUV"))
                 .forEach((car) => {
@@ -64,10 +74,11 @@ const filterProducts = {
     typeElectric: function () {
         document.getElementById("electric").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .filter((car) => car.type.includes("Electric"))
                 .forEach((car) => {
-                    console.log(car.name);
+                    //console.log(car.name);
                     createProduct(car);
                 });
         });
@@ -75,6 +86,7 @@ const filterProducts = {
     typeTrucks: function () {
         document.getElementById("trucks").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .filter((car) => car.type.includes("Truck"))
                 .forEach((car) => {
@@ -86,6 +98,7 @@ const filterProducts = {
     typeCoupes: function () {
         document.getElementById("coupes").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .filter((car) => car.type.includes("Coupe"))
                 .forEach((car) => {
@@ -97,6 +110,7 @@ const filterProducts = {
     typeLowHigh: function () {
         document.getElementById("priceLowHigh").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .sort((a, b) => a.price - b.price)
                 .forEach((car) => {
@@ -109,6 +123,7 @@ const filterProducts = {
     typeHighLow: function () {
         document.getElementById("priceHighLow").addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .sort((a, b) => b.price - a.price)
                 .forEach((car) => {
