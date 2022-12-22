@@ -78,7 +78,7 @@ const filterProducts = {
             carsData
                 .filter((car) => car.type.includes("Electric"))
                 .forEach((car) => {
-                    //console.log(car.name);
+                    console.log(car.name);
                     createProduct(car);
                 });
         });
