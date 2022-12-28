@@ -1,10 +1,11 @@
 import "/styles/style.css";
 import { carsData } from "./cars.js";
+import { DOM } from "./DOM.js";
 console.log(carsData);
 
 
 //theme buttons
-document.getElementById("toggleTheme").addEventListener("click", function () {
+DOM.toggleTheme.addEventListener("click", function () {
     if (document.body.classList.contains("lightMode")) {
         document.body.classList.add("darkMode");
         document.body.classList.remove("lightMode");
@@ -15,16 +16,16 @@ document.getElementById("toggleTheme").addEventListener("click", function () {
     }
 });
 
-
 const createProduct = function (carsData) {
-    document.getElementById("products").insertAdjacentHTML
+    DOM.products.insertAdjacentHTML
         ("beforeend",
             `
           <div id="productCard">
           <p><img src=${carsData.imgURL}></p>
           <h2>${carsData.name}</h2>
-          <p id="outputText">Type: ${carsData.type}</p>
-          <p id="outputText">Price: ${carsData.price}</p>
+          <p id="outputText">Type: ${carsData.type}</p><br>
+          <p id="outputText">Description: ${carsData.description}</p><br>
+          <p id="outputText">Price: ${carsData.price}</p><br>
           <button id="shopBtn">Shop Now</button>
           </div>
         `
@@ -44,13 +45,16 @@ const mapData = function () {
             name: car.name,
             imgURL: car.imgURL,
             price: car.price,
-            type: car.type
+            type: car.type,
+            description: car.description
         }))
 };
 
+
+
 const filterProducts = {
     typeAll: function () {
-        document.getElementById("allCars").addEventListener("click", function () {
+        DOM.allCars.addEventListener("click", function () {
             remove();
             carsData
                 .forEach((car) => {
@@ -60,7 +64,7 @@ const filterProducts = {
         });
     },
     typeSUVs: function () {
-        document.getElementById("SUVs").addEventListener("click", function () {
+        DOM.SUVs.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -72,7 +76,7 @@ const filterProducts = {
         });
     },
     typeElectric: function () {
-        document.getElementById("electric").addEventListener("click", function () {
+        DOM.electric.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -84,7 +88,7 @@ const filterProducts = {
         });
     },
     typeTrucks: function () {
-        document.getElementById("trucks").addEventListener("click", function () {
+        DOM.trucks.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -96,7 +100,7 @@ const filterProducts = {
         });
     },
     typeCoupes: function () {
-        document.getElementById("coupes").addEventListener("click", function () {
+        DOM.coupes.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -108,7 +112,7 @@ const filterProducts = {
         });
     },
     typeLowHigh: function () {
-        document.getElementById("priceLowHigh").addEventListener("click", function () {
+        DOM.priceLowHigh.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -121,7 +125,7 @@ const filterProducts = {
         });
     },
     typeHighLow: function () {
-        document.getElementById("priceHighLow").addEventListener("click", function () {
+        DOM.priceHighLow.addEventListener("click", function () {
             remove();
             mapData();
             carsData
@@ -142,7 +146,6 @@ filterProducts.typeTrucks();
 filterProducts.typeCoupes();
 filterProducts.typeLowHigh();
 filterProducts.typeHighLow();
-
 
 
 

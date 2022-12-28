@@ -17,7 +17,7 @@ body,
   --h1: 5rem;
   --h2: 2.369rem;
   --h3: 1.789rem;
-  --p: 2rem;
+  --p: 1.7rem;
 }
 
 .container {
@@ -131,7 +131,7 @@ p {
 }
 
 #productCard {
-  width: 40rem;
+  width: 50rem;
   height: 60rem;
   background-color: var(--card);
   margin: 2rem;
