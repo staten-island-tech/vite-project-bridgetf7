@@ -61,6 +61,7 @@ const filterProducts = {
     typeAll: function () {
         DOM.allCars.addEventListener("click", function () {
             remove();
+            mapData();
             carsData
                 .forEach((car) => {
                     console.log(car.name);
