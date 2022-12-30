@@ -16,6 +16,12 @@ DOM.toggleTheme.addEventListener("click", function () {
     }
 });
 
+//formats prices into US dollars
+let usDollar = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+});
+
 const createProduct = function (carsData) {
     DOM.products.insertAdjacentHTML
         ("beforeend",
@@ -24,8 +30,7 @@ const createProduct = function (carsData) {
           <p><img src=${carsData.imgURL}></p>
           <h2>${carsData.name}</h2>
           <p id="outputText">Type: ${carsData.type}</p><br>
-          <p id="outputText">Description: ${carsData.description}</p><br>
-          <p id="outputText">Price: ${carsData.price}</p><br>
+          <p id="outputText">Price: ${usDollar.format(carsData.price)}</p><br>
           <button id="shopBtn">Shop Now</button>
           </div>
         `
